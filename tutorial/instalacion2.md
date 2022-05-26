@@ -37,4 +37,4 @@ Hecho esto, se debería de terminar la configuración de Icinga.
 
 ![Imagen7](imagenes/ansiblef.png)
 
-### [Volver a la leyenda](../leyenda.md) [Siguiente paso](monitorizacion.md)
+### [Volver a la leyenda](../index.md) [Siguiente paso](monitorizacion.md)
