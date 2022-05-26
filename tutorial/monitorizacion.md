@@ -53,7 +53,9 @@ object Service "ssh" {
 }
 ```
 ##### Captura de la monitorización:
+
 ![Imagen1](imagenes/monitorizacion.png)
+
 ##### Nota
 Los errores de disco son errores de la aplicación y no son corregibles. 
 
