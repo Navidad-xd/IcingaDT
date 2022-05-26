@@ -59,4 +59,4 @@ Email recibido
 
 ![Imagen6](imagenes/noti6.png)
 
-### [Volver a la leyenda](../leyenda.md)
+### [Volver a la leyenda](../index.md)
