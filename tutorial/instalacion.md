@@ -16,11 +16,13 @@ Lo primero que haremos será instalar instalando apache.
 sudo apt install apache2
 ```
 ![imagen1](imagenes/manual1.png)
+
 Una vez instalado, habilitaremos apache con el comando:
 ```
 sudo systemctl enable apache2
 ```
 ![imagen2](imagenes/manual2.png)
+
 Ahora, encenderemos el servicio:
 ``` 
 sudo systemctl start apache2
@@ -30,11 +32,13 @@ Y comprobaremos que funciona con:
 sudo systemctl status apache2
 ```
 ![imagen3](imagenes/manual3.png)
+
 Ahora instalamos mariadb
 ``` 
 sudo apt install mariadb-server mariadb-client
 ```
 ![imagen4](imagenes/manual4.png)
+
 Lo habilitamos y lo iniciamos con los comandos y vemos su estado con los siguientes comandos respectivamente:
 ```
 sudo systemctl enable mariadb
@@ -49,21 +53,25 @@ Ahora instalamos PHP.
 sudo  apt install software-properties-common
 ```
 ![imagen6](imagenes/manual6.png)
+
 Añadiremos el repositorio OndeJ que nos dará la última versión de PHP.
 ```
 sudo add-apt-repository ppa:ondrej/php
 ```
 ![imagen7](imagenes/manual7.png)
+
 Ahora instalaremos PHP con las dependencias necesarias para Icinga.
 ```
 sudo apt install php php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip php-cli php-mysql php8.0-common php8.0-opcache php-gmp php-imagick
 ```
 ![imagen8](imagenes/manual8.png)
+
 Verificamos que PHP está instalado.
 ```
 php -v
 ```
 ![imagen9](imagenes/manual9.png)
+
 Ahora, instalaremos Icinga, lo primero que haremos será conseguir una key GPG.
 ```
 curl https://packages.icinga.com/icinga.key | apt-key add -
@@ -97,9 +105,13 @@ sudo apt install icinga2-ido-mysql
 ```
 Ahora, configuraremos el SQL.
 ![imagen12](imagenes/manual12.png)
+
 ![imagen13](imagenes/manual13.png)
+
 ![imagen14](imagenes/manual14.png)
+
 ![imagen15](imagenes/manual15.png)
+
 Hecho esto,  instalamos los plugins de monitorización
 ```
 apt-get install monitoring-plugins
@@ -109,6 +121,7 @@ Ahora nos meteremos en la base de datos de MariaDB.
 sudo mysql -u root -p
 ```
 ![imagen16](imagenes/manual16.png)
+
 En cada línea escribiremos lo siguiente:
 ```
 CREATE DATABASE icinga2 CHARACTER SET UTF8 COLLATE UTF8_BIN;
@@ -132,6 +145,7 @@ sudo nano /etc/icinga2/features-available/ido-mysql.conf
 ```
 Configuraremos el fichero con lo anteriormente configurado.
 ![imagen17](imagenes/manual17.png)
+
 Después de esto,reiniciamos icinga.
 ```
 service icinga2 restart
@@ -185,25 +199,32 @@ icingacli setup token create
 The newly generated setup token is: 90824bb238b3f11d
 ```
 ![imagen18](imagenes/manual18.png)
+
 Ahora, nos meteremos en la ip que saquemos mediante nuestro equipo y pondremos en el navegador:
 ```
 http://10.0.2.15/icingaweb2
 ```
 Escribiremos nuestro token y daremos a siguiente.
 ![imagen19](imagenes/manual19.png)
+
 En las siguientes dos pantallas (Módulos y requisitos), daremos click a siguiente.
 
 En la pantalla de autentificación elegiremos la opción base de datos.
 
 En la siguiente pestaña nos pedirá los recursos de la base de datos, escribiremos lo siguiente.
 ![imagen20](imagenes/manual20.png)
+
 ![imagen21](imagenes/manual21.png)
+
 Daremos a siguiente en la de autentificación.
 En la pestaña de administración escribiremos el usuario admin y la contraseña que queramos.
 ![imagen22](imagenes/manual22.png)
+
 ![imagen23](imagenes/manual23.png)
+
 Seguiremos dándole a siguiente hasta llegar a lo siguiente.
 ![imagen24](imagenes/manual24.png)
+
 Validamos y seguiremos dando a next hasta finalizar.
 ![imagen25](imagenes/manual25.png)
 
