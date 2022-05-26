@@ -4,9 +4,13 @@ Lo primero que debemos hacer es instalar postfix mailutils mediante el comando:
 sudo apt-get install postfix mailutils
 ```
 Se abrirá el asistente y seguiremos esto mediante las siguientes capturas
+
 ![Imagen1](imagenes/noti1.png)
+
 Pondremos el correo que queremos que tenga el servidor
+
 ![Imagen2](imagenes/noti2.png)
+
 Una vez terminada la instalación, iremos al archivo
 ```
 /etc/icinga2/conf.d/users.conf
@@ -39,14 +43,20 @@ vars.notification["mail"] = {
 ```
 Ejemplo de esto en los archivos:
 En hosts.conf
+
 ![Imagen3](imagenes/noti3.png)
+
 En services.conf
+
 ![Imagen4](imagenes/noti4.png)
 
 ##### Prueba de funcionamiento
 Para esta, apagaré el equipo para comprobar que me manda un correo.
+
 ![Imagen5](imagenes/noti5.png)
+
 Email recibido
+
 ![Imagen6](imagenes/noti6.png)
 
 ### [Volver a la leyenda](../leyenda.md)
