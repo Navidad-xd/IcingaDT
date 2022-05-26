@@ -59,4 +59,5 @@ object Service "ssh" {
 ##### Nota
 Los errores de disco son errores de la aplicación y no son corregibles. 
 
-### [Volver a la leyenda](../index.md) [Siguiente paso](notificacion.md)
+### [Volver a la leyenda](../index.md)
+### [Siguiente paso](notificacion.md)
