@@ -238,4 +238,4 @@ Validamos y seguiremos dando a next hasta finalizar.
 ![imagen25](imagenes/manual25.png)
 
 
-### [Volver a la leyenda](../leyenda.md)  [Siguiente paso](instalacion2.md)
+### [Volver a la leyenda](../index.md)  [Siguiente paso](instalacion2.md)
