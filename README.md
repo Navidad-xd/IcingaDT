@@ -4,4 +4,4 @@ Originalmente fue creada a partir una bifurcación del software Nagios en el añ
 
 En esta guía, nos moveremos mediante la leyenda y los botones al final de la página
 
-### [Ir a la leyenda](leyenda.md)
+### [Ir a la leyenda](index.md)
