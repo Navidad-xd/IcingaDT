@@ -39,6 +39,16 @@ object Host "Instituto DPM" {
     import "generic-host"
     address = "81.88.48.71"
 }
+
+/*Otra forma de monitorizar una página web que actualmente no funciona*/
+object Host "Instituto DPM 2" {
+    address = "81.88.48.71"
+    import "generic-host"
+    vars.http_vhosts["iesdomingoperezminik.es"] = {
+        http_vhost = "iesdomingoperezminik.es"
+        http_ssl = true
+      }
+}
 ```
 Ahora entraremos en services.conf en la ruta:
 ```
